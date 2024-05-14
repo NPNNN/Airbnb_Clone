@@ -1,16 +1,16 @@
 services:
 - type: web
-  name: backend
+  name: api
   env: node
   repo: https://github.com/NPNNN/Airbnb_Clone/api
   branch: main
-  buildCommand: cd backend && yarn install
-  startCommand: cd backend && yarn start
+  buildCommand: cd api && yarn install
+  startCommand: cd api && yarn start
 
 - type: web
-  name: frontend
+  name: client
   env: node
   repo: https://github.com/NPNNN/Airbnb_Clone/client
   branch: main
-  buildCommand: cd frontend && yarn install && yarn build
-  startCommand: cd frontend && yarn start
+  buildCommand: cd client && yarn install && yarn build
+  startCommand: cd client && yarn start
